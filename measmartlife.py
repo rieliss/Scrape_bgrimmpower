@@ -68,6 +68,7 @@ if __name__ == "__main__":
             )
             .click()
         )
+        # sleep(10)
         myElem_5 = (
             WebDriverWait(browser, 10)
             .until(
@@ -79,28 +80,38 @@ if __name__ == "__main__":
         )
         myElem_6 = (
             WebDriverWait(browser, 10)
-            .until(
-                EC.element_to_be_clickable(
-                    (By.XPATH, "//*[contains(text(), 'รายเดือน')]")
-                )
-            )
-            .click()
-        )
-        myElem_6 = (
-            WebDriverWait(browser, 10)
-            .until(
-                EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'ค้นหา')]"))
-            )
+            .until(EC.element_to_be_clickable((By.CLASS_NAME, "div.item. selected")))
             .click()
         )
         print("myElem_6")
-        myElem_7 = (
-            WebDriverWait(browser, 10)
-            .until(EC.element_to_be_clickable((By.CLASS_NAME, "div.amos-button")))
-            .click()
-        )
-        print("myElem_7")
-        sleep(10)
+        # myElem_6 = (
+        #     WebDriverWait(browser, 10)
+        #     .until(
+        #         EC.element_to_be_clickable(
+        #             (By.XPATH, "//*[contains(text(), 'รายเดือน')]")
+        #         )
+        #     )
+        #     .click()
+        # )
+        # myElem_7 = (
+        #     WebDriverWait(browser, 10)
+        #     .until(
+        #         EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'ค้นหา')]"))
+        #     )
+        #     .click()
+        # )
+        # print("myElem_6")
+        # myElem_7 = (
+        #     WebDriverWait(browser, 10)
+        #     .until(
+        #         EC.element_to_be_clickable(
+        #             (By.CLASS_NAME, "div.item  selected")
+        #         )
+        #     )
+        #     .click()
+        # )
+        # print("myElem_7")
+        # sleep(10)
         # myElem_8 = (
         #     WebDriverWait(browser, 10)
         #     .until(
@@ -111,7 +122,7 @@ if __name__ == "__main__":
         # print("myElem_8")
         # sleep(10)
 
-        soup = BeautifulSoup(browser.page_source, "lxml")
+        # soup = BeautifulSoup(browser.page_source, "lxml")
         # myElem_4 = WebDriverWait(browser, 10).until(
         #     EC.presence_of_element_located((By.CSS_SELECTOR, "input.resizable-input"))
         # )
@@ -136,9 +147,9 @@ if __name__ == "__main__":
         #     .click()
         # )
 
-        sleep(10)
+        sleep(50)
         print("Completed!")
-        browser.close()
+        # browser.close()
     except TimeoutException:
         print("No element found")
     sleep(5)

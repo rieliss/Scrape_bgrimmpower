@@ -141,9 +141,6 @@ if __name__ == "__main__":
         sleep(10)
         soup = BeautifulSoup(browser.page_source, "lxml")
         print(soup.prettify())
-        # with open("output.html", "w", encoding="utf-8") as file:
-        #     # prettify the soup object and convert it into a string
-        #     file.write(str(soup.prettify()))
         data_denso1_1 = []
         table = soup.find(
             "table", attrs={"id": "ContentPlaceHolder1_gv_Report_DXMainTable"}
@@ -156,26 +153,7 @@ if __name__ == "__main__":
                 row_data.append(cell.text)
             data_denso1_1.append(row_data)
             df_denso1_1 = pd.DataFrame(data_denso1_1)
-            # print(data_denso1_1)
-            # df_denso1_1 = pd.DataFrame(data_denso1_1)
             df_denso1_1 = df_denso1_1[1:]
-        # print(df_denso1_1)
-        df_denso1_1.to_excel(
-            path + "/Denso1_1.xlsx",
-            sheet_name="BPK Feeder 1",
-            header=[
-                "Date",
-                "Max kW Peak",
-                "Max kW Off Peak",
-                "Max kW Holiday",
-                "kWh Peak",
-                "kWh Off Peak",
-                "kWh Holiday",
-                "Total kWh",
-                "Avg PF",
-                "",
-            ],
-        )
         print(df_denso1_1)
         print("Write DENSO 1.1 Successfully!")
         sleep(10)

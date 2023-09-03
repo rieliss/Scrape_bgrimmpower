@@ -63,7 +63,7 @@ if __name__ == "__main__":
             )
             .click()
         )
-        # sleep(50)
+        sleep(10)
 
         print("Completed!")
         browser.close()
