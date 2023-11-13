@@ -12,12 +12,6 @@ import requests
 from bs4 import BeautifulSoup
 
 if __name__ == "__main__":
-    # Instantiate the webdriver with the executable location of MS Edge
-    # browser = webdriver.Edge(r"msedgedriver.exe")
-    # browser = webdriver.Edge(
-    #     r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-    # )
-
     edgeService = Service(r"msedgedriver.exe")
     browser = webdriver.Edge(service=edgeService)
     # Simply just open a new Edge browser and go to lambdatest.com

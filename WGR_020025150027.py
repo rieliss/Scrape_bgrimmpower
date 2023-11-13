@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.wait import WebDriverWait
-
+from selenium.webdriver.edge.service import Service
 
 from bs4 import BeautifulSoup
 import requests
@@ -111,7 +111,9 @@ elif month_time == "12":
         print("Folder %s already exists" % path)
 
 if __name__ == "__main__":
-    browser = webdriver.Edge(r"msedgedriver.exe")
+    edgeService = Service(r"msedgedriver.exe")
+    browser = webdriver.Edge(service=edgeService)
+    # Simply just open a new Edge browser and go to lambdatest.com
     browser.maximize_window()
     browser.get("https://www.amr.pea.co.th/AMRWEB/Index.aspx")
     wait = WebDriverWait(browser, 10)
