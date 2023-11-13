@@ -9,8 +9,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.edge.service import Service
 
 from bs4 import BeautifulSoup
-import pandas as pd
-import numpy as np
 import os
 import datetime
 
