@@ -112,7 +112,7 @@ if __name__ == "__main__":
         l1_denso1_1 = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "txt_Username"))
         )
-        l1_denso1_1.send_keys("DENSO1.1")
+        l1_denso1_1.send_keys("Denso")
         l1_denso1_1.click()
         Click1_denso1_1 = (
             WebDriverWait(browser, 10)
@@ -122,7 +122,7 @@ if __name__ == "__main__":
         l2_denso1_1 = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "txt_Password"))
         )
-        l2_denso1_1.send_keys("F#cilityBPK1.1")
+        l2_denso1_1.send_keys("Facility99")
         l2_denso1_1.click()
         c2_denso1_1 = (
             WebDriverWait(browser, 10)
@@ -138,6 +138,12 @@ if __name__ == "__main__":
             )
             .click()
         )
+        l3_denso1_1 = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.ID, "ContentPlaceHolder1_cmb_Contract_I"))
+        )
+        l3_denso1_1.send_keys("Denso (Thailand) Co., Ltd. (1.1)")
+        l3_denso1_1.click()
+        sleep(5)
         c4_denso1_1 = (
             WebDriverWait(browser, 10)
             .until(EC.element_to_be_clickable((By.ID, "ContentPlaceHolder1_btn_View")))
@@ -197,7 +203,7 @@ if __name__ == "__main__":
         l1_denso1_2 = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "txt_Username"))
         )
-        l1_denso1_2.send_keys("DENSO1.2")
+        l1_denso1_2.send_keys("DENSO")
         l1_denso1_2.click()
         Click1_denso1_2 = (
             WebDriverWait(browser, 10)
@@ -207,7 +213,7 @@ if __name__ == "__main__":
         l2_denso1_2 = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "txt_Password"))
         )
-        l2_denso1_2.send_keys("F#cilityBPK1.2")
+        l2_denso1_2.send_keys("Facility99")
         l2_denso1_2.click()
         c2_denso1_2 = (
             WebDriverWait(browser, 10)
@@ -223,6 +229,12 @@ if __name__ == "__main__":
             )
             .click()
         )
+        l3_denso1_2 = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.ID, "ContentPlaceHolder1_cmb_Contract_I"))
+        )
+        l3_denso1_2.send_keys("Denso (Thailand) Co., Ltd. (1.2)")
+        l3_denso1_2.click()
+        sleep(5)
         c4_denso1_2 = (
             WebDriverWait(browser, 10)
             .until(EC.element_to_be_clickable((By.ID, "ContentPlaceHolder1_btn_View")))
@@ -283,7 +295,7 @@ if __name__ == "__main__":
         l1_denso1_3 = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "txt_Username"))
         )
-        l1_denso1_3.send_keys("DENSO1.3")
+        l1_denso1_3.send_keys("DENSO")
         l1_denso1_3.click()
         Click1_denso1_3 = (
             WebDriverWait(browser, 10)
@@ -293,7 +305,7 @@ if __name__ == "__main__":
         l2_denso1_3 = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "txt_Password"))
         )
-        l2_denso1_3.send_keys("F#cilityBPK1.3")
+        l2_denso1_3.send_keys("Facility99")
         l2_denso1_3.click()
         c2_denso1_3 = (
             WebDriverWait(browser, 10)
@@ -309,6 +321,12 @@ if __name__ == "__main__":
             )
             .click()
         )
+        l3_denso1_3 = WebDriverWait(browser, 10).until(
+            EC.presence_of_element_located((By.ID, "ContentPlaceHolder1_cmb_Contract_I"))
+        )
+        l3_denso1_3.send_keys("Denso (Thailand) Co., Ltd. (1.3)")
+        l3_denso1_3.click()
+        sleep(5)
         c4_denso1_3 = (
             WebDriverWait(browser, 10)
             .until(EC.element_to_be_clickable((By.ID, "ContentPlaceHolder1_btn_View")))
