@@ -15,11 +15,11 @@ import numpy as np
 import os
 import datetime
 
-# current_time = datetime.datetime.now()
-current_time = datetime.datetime(2023, 10, 31)
+current_time = datetime.datetime.now()
+# current_time = datetime.datetime(2023, 10, 31)
 
 
-x = datetime.datetime(2024, 7, 1)
+# x = datetime.datetime(2024, 7, 1)
 time = str(current_time.month) + "-" + str(current_time.year)
 month_time = str(current_time.month)
 print(month_time)
