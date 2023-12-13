@@ -212,9 +212,9 @@ if __name__ == "__main__":
             Co2Neutral.append(row_data)
             Co2 = pd.DataFrame(Co2Neutral)
             dflist = Co2.dropna()
-        print(dflist)
+        # print(dflist)
         dflist.pop(dflist.columns[0])
-        print(dflist)
+        # print(dflist)
         dflist.to_excel(
             path + "/SRG_slp55022555mlp.xlsx",
             sheet_name="SRG_slp55022555mlp",

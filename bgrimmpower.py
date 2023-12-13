@@ -151,12 +151,12 @@ if __name__ == "__main__":
         )
         sleep(10)
         soup = BeautifulSoup(browser.page_source, "lxml")
-        print(soup.prettify())
+        # print(soup.prettify())
         data_denso1_1 = []
         table = soup.find(
             "table", attrs={"id": "ContentPlaceHolder1_gv_Report_DXMainTable"}
         )
-        print(table)
+        # print(table)
         table_body = table.find("tbody")
 
         for row in table.find_all("tr"):

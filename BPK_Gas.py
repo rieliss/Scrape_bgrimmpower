@@ -59,7 +59,6 @@ if __name__ == "__main__":
             .click()
         )
         sleep(10)
-
         print("Completed!")
         browser.close()
     except TimeoutException:
