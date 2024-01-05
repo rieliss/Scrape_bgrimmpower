@@ -17,7 +17,7 @@ import datetime
 
 current_time = datetime.datetime.now()
 
-# current_time = datetime.datetime(2023, 7, 1)
+# current_time = datetime.datetime(2023, 12, 31)
 time = str(current_time.month) + "-" + str(current_time.year)
 month_time = str(current_time.month)
 print(month_time)
